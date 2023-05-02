@@ -123,7 +123,7 @@ Response:
 
 Next Hi-Priority features:
 - Improve security around user account: I opted for a clean email/pin combination as this was very simple/convenient for time window and still to a little extent secure enough.
-- Double entry system of accounting: This is so credit/debit can be accounted for seeing as the way money is moved here is not ideal. We could easily lead
+- Double entry system of accounting: This is so credit/debit can be accounted for seeing as the way money is moved here is not ideal. We could easily lose money or have race conditions (locks were implemented here to minimize that regardless) using this approach and a proper credit/debit system can help to mitigate that. 
 - Ensure that transactions are better tracked + idempotency: AccountTransactions only contain the transactions being moved across but ideally, we want to have a model that tracks what transaction was moved i.e we have a Transfer model that tracks sender/recipient and then on the AccountTransaction model, we have a `detail_type` and `detail_id` that will store "Transfer" and "1" respectively. That way, we can always tie account transactions to what triggered them. This direction also allows us to store details of transactions before actually acting on them which means we can do more things like queuing the transfers for later time.
 - Notifications: we want to ensure there are notifications for things like funding, transfer being sent/received successfully, account logins as well.
 - Extend tests to cover more edge cases as requirements listed are the only test cases covered
