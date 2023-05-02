@@ -27,6 +27,7 @@ Persistence Structure:
 
 
 Requirements:
+
 [ x ] Create an account
 ```
 Endpoint: http://localhost:3000/users [POST]
