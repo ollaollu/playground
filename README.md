@@ -88,9 +88,7 @@ Response: {
 ```
 Account Balance:
 Endpoint: http://localhost:3000/users/:user_id/accounts [GET]
-Response:
-```
-{
+Response: {
     "accounts": [
         {
             "id": 2,
@@ -103,8 +101,8 @@ Response:
     ]
 }
 ```
-
-Account Balance:
+```
+Account Transactions:
 Endpoint: http://localhost:3000/users/:user_id/accounts/:user_id/account_transactions [GET]
 Response:
 {
