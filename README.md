@@ -129,13 +129,14 @@ Next Hi-Priority features:
 - Extend tests to cover more edge cases as requirements listed are the only test cases covered
 - Extend tests to also further cover all guard clauses that were added to the implementation
 
-
+```
 Extending the application more using the below:
 • Send an email notification to the account holder when:
 • The account balance is below a user-configurable amount
 • The account receives a transfer
 • Other triggers may be requested in the future
 • Allow account holders to schedule recurring transfers
+```
 
 For these features, I will need to:
 - Add a `NotificationJob` worker that will allow us queue notifications in background
