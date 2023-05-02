@@ -80,7 +80,7 @@ Response: {
         "created_at": "2023-05-01T17:15:04.781Z",
         "updated_at": "2023-05-02T10:18:10.332Z"
     },
-    "message": "Transfer to tony successful!"
+    "message": "Transfer successful!"
 }
 ```
 
