@@ -103,7 +103,7 @@ Response: {
 ```
 ```
 Account Transactions:
-Endpoint: http://localhost:3000/users/:user_id/accounts/:user_id/account_transactions [GET]
+Endpoint: http://localhost:3000/users/:user_id/accounts/:account_id/account_transactions [GET]
 Response:
 {
     "account_transactions": [
